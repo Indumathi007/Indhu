@@ -1,0 +1,38 @@
+import numpy as np
+a=np.array([[1,2,4],[5,8,7]])
+print("Array created using passed list:\n",a)
+
+b=np.zeros((3,4))
+print("\nAn array initialized zeros:\n",b)
+
+c=np.full((3,3),6)
+print("\nAn array initialized with all 6s.\n",c)
+
+d=np.random.random((2,2))
+print("\nA random array:\n",d)
+
+e=np.arange(0,30,5)
+print("\n A sequential array with steps of 5:\n",e)
+
+arr=np.array([[1,2,3,4],
+             [5,2,4,2],
+             [1,2,0,1]])
+newarr=arr.reshape(4,3)
+print("\n Original array:\n",arr)
+print("reshaped array[4,3]:\n",newarr)
+
+flarr=arr.flatten()
+print("\n Original rray:\n",arr)
+print("Flattened array:\n",flarr)
+
+print("\n No.of.dimensions:",arr.ndim)
+
+print("\n Shape of array:",arr.shape)
+
+print("\n size of array:",arr.size)
+
+print("\n array stores elements of type :",arr.dtype)
+
+newtype=arr.astype('f')
+print("\n coverted array elements:\n",newtype)
+print("converted array type:",newtype.dtype)
